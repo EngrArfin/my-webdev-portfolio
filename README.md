@@ -1,4 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Deployment
+my-webdev-portfolio-qaoo2w1v8-engrarfins-projects.vercel.app
+Domains
+my-webdev-portfolio-blue.vercel.app
+
+---
+
+Build Project:
+Domains
+my-webdev-portfolio-blue.vercel.app
+my-webdev-portfolio-git-main-engrarfins-projects.vercel.app
+my-webdev-portfolio-qaoo2w1v8-engrarfins-projects.vercel.app
 
 ## Getting Started
 
