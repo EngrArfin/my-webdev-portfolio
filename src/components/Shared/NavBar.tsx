@@ -1,8 +1,9 @@
 import MagicButton from "@/components/MagicButton/MagicButton";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="navbar bg-gray-900 text-white">
+    <div className="navbar bg-gray-950 text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,28 +27,38 @@ const Navbar: React.FC = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a href="#item1">Item 1</a>
+              <Link href="/about">About Us</Link>
             </li>
-
             <li>
-              <a href="#item3">Blog</a>
+              <Link href="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link href="/achivement">Achivement</Link>
+            </li>
+            <li>
+              <Link href="/blogs">Blog</Link>
             </li>
           </ul>
         </div>
-        <a href="#" className="btn btn-ghost text-xl">
-          WebDev Arfin
-        </a>
+        <Link href="/" className="btn btn-ghost text-xl">
+          Portfolio S Arfin
+        </Link>
       </div>
 
       {/* Navbar Center */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="#item1">About Us</a>
+            <Link href="/about">About Us</Link>
           </li>
-
           <li>
-            <a href="#item3">Blog</a>
+            <Link href="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link href="/achivement">Achivement</Link>
+          </li>
+          <li>
+            <Link href="/blogs">Blog</Link>
           </li>
         </ul>
       </div>

@@ -5,7 +5,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-16 px-6">
+    <footer className="bg-gray-950 text-white py-16 px-6">
       <div className="max-w-screen-lg mx-auto text-center">
         <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg mx-auto mb-8">
           <Image
@@ -17,7 +17,9 @@ const Footer: React.FC = () => {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <h2 className="text-4xl font-bold mb-4">GET IN TOUCH</h2>
+        <h2 className="text-4xl text-yellow-500 font-bold mb-4">
+          GET IN TOUCH
+        </h2>
         <p className="text-gray-400 mb-12">
           Feel free to reach out. I am open to discussing new projects, creative
           ideas, or opportunities to be part of your visions.
@@ -26,7 +28,7 @@ const Footer: React.FC = () => {
 
       <div className="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
-          <h3 className="text-3xl font-bold text-white mb-4">
+          <h3 className="text-3xl font-bold text-yellow-500 mb-4">
             DON NOT BE SHY!
           </h3>
           <p className="text-gray-400 mb-8">
