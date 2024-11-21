@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="text-white">
+    <div className="text-white m-5">
       <div className=" text-white">
         {/* Left Side: Personal Information */}
         <div className="text-white">
@@ -9,10 +9,10 @@ const About = () => {
           </h1>
           <p className="text-xl text-white">
             I am{" "}
-            <span className="font-semibold text-indigo-600">
+            <span className="font-semibold text-yellow-600">
               Md Samsel Arfin
             </span>
-            , a passionate Full Stack Developer specializing in the MERN stack
+            a passionate Full Stack Developer specializing in the MERN stack
             (MongoDB, Express.js, React, Node.js).
           </p>
 
