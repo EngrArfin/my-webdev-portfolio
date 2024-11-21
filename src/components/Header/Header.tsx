@@ -15,19 +15,17 @@ const Header: React.FC = () => {
     >
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content flex flex-col lg:flex-row items-center text-neutral-content">
-        {/* Left Section: Photo (smaller and aligned properly) */}
         <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg lg:mr-8 mb-6 lg:mb-0">
           <Image
             src={photo}
             alt="Md Samsel Arfin"
-            width={192} // Specify the width
-            height={192} // Specify the height
+            width={192}
+            height={192}
             className="rounded-full"
-            style={{ objectFit: "cover" }} // Apply objectFit using style
+            style={{ objectFit: "cover" }}
           />
         </div>
 
-        {/* Right Section: Text Content */}
         <div className="max-w-lg text-center lg:text-left">
           <h1 className="mb-2 text-4xl font-bold text-gray-100">
             I am <span className="text-yellow-500">Md Samsel Arfin.</span>

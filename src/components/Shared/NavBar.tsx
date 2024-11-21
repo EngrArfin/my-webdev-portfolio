@@ -3,7 +3,6 @@ import MagicButton from "@/components/MagicButton/MagicButton";
 const Navbar: React.FC = () => {
   return (
     <div className="navbar bg-gray-900 text-white">
-      {/* Navbar Start */}
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -53,7 +52,6 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
 
-      {/* Navbar End */}
       <div className="navbar-end">
         <a href="#" className="">
           <MagicButton />
