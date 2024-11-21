@@ -17,7 +17,7 @@ const Header: React.FC = () => {
       <div className="hero-content flex flex-col lg:flex-row items-center text-neutral-content">
         <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg lg:mr-8 mb-6 lg:mb-0">
           <Image
-            src={photo}
+            src={photo || "/photo.png"}
             alt="Md Samsel Arfin"
             width={192}
             height={192}

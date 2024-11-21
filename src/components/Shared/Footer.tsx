@@ -7,10 +7,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-16 px-6">
       <div className="max-w-screen-lg mx-auto text-center">
-        {/* Centered Profile Image */}
         <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg mx-auto mb-8">
           <Image
-            src={footerphoto}
+            src={footerphoto || "/photo.png"}
             alt="Md Samsel Arfin"
             width={192}
             height={192}
@@ -26,7 +25,6 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Left Section: Contact Info */}
         <div>
           <h3 className="text-3xl font-bold text-white mb-4">
             DON NOT BE SHY!
@@ -70,7 +68,6 @@ const Footer: React.FC = () => {
               <p className="text-gray-400">+8801952487468</p>
             </div>
           </div>
-          {/* Social Links */}
           <div className="flex mt-6 space-x-6">
             <a
               href="https://facebook.com"
@@ -107,7 +104,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Section: Contact Form */}
         <div>
           <form className="grid gap-4">
             <input
