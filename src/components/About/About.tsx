@@ -83,7 +83,7 @@ const About = () => {
                         <span className="font-bold">Email:</span>{" "}
                         <a
                           href="arfin.cse.green.edu.bd@gmail.com"
-                          className="text-yellow-400 underline"
+                          className="text-red-800 underline"
                         >
                           arfin.cse.green.edu.bd@gmail.com
                         </a>
@@ -104,27 +104,35 @@ const About = () => {
               <div>
                 <div className="grid grid-cols-2 gap-6">
                   {/* Cards */}
-                  <div className="bg-yellow-500 p-6 rounded-lg text-center shadow-md">
-                    <h3 className="text-5xl font-extrabold text-black">2+</h3>
-                    <p className="text-lg font-medium text-gray-900 mt-2">
+                  <div className="bg-red-800 p-6 rounded-lg text-center shadow-md">
+                    <h3 className="text-5xl font-extrabold text-yellow-400">
+                      2+
+                    </h3>
+                    <p className="text-lg font-medium text-white-900 mt-2">
                       Years of Experience
                     </p>
                   </div>
-                  <div className="bg-yellow-500 p-6 rounded-lg text-center shadow-md">
-                    <h3 className="text-5xl font-extrabold text-black">15+</h3>
-                    <p className="text-lg font-medium text-gray-900 mt-2">
+                  <div className="bg-red-800 p-6 rounded-lg text-center shadow-md">
+                    <h3 className="text-5xl font-extrabold text-yellow-400">
+                      15+
+                    </h3>
+                    <p className="text-lg font-medium text-white-900 mt-2">
                       Completed Projects
                     </p>
                   </div>
-                  <div className="bg-yellow-500 p-6 rounded-lg text-center shadow-md">
-                    <h3 className="text-5xl font-extrabold text-black">5+</h3>
-                    <p className="text-lg font-medium text-gray-900 mt-2">
+                  <div className="bg-red-800 p-6 rounded-lg text-center shadow-md">
+                    <h3 className="text-5xl font-extrabold text-yellow-400">
+                      5+
+                    </h3>
+                    <p className="text-lg font-medium text-white-900 mt-2">
                       Happy Customers
                     </p>
                   </div>
-                  <div className="bg-yellow-500 p-6 rounded-lg text-center shadow-md">
-                    <h3 className="text-5xl font-extrabold text-black">0+</h3>
-                    <p className="text-lg font-medium text-gray-900 mt-2">
+                  <div className="bg-red-800 p-6 rounded-lg text-center shadow-md">
+                    <h3 className="text-5xl font-extrabold text-yellow-400">
+                      0+
+                    </h3>
+                    <p className="text-lg font-medium text-white-900 mt-2">
                       Awards Won
                     </p>
                   </div>

@@ -1,7 +1,7 @@
 Deployment
-my-webdev-portfolio-qaoo2w1v8-engrarfins-projects.vercel.app
+my-webdev-portfolio-2wbimcwpk-engrarfins-projects.vercel.app
 Domains
-my-webdev-portfolio-blue.vercel.app
+my-webdev-portfolio-hazel.vercel.app
 
 ---
 
