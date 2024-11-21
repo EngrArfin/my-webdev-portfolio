@@ -55,10 +55,9 @@ const Navbar: React.FC = () => {
 
       {/* Navbar End */}
       <div className="navbar-end">
-        {/* <a href="#" className="btn">
-          Button
-        </a> */}
-        <MagicButton />
+        <a href="#" className="">
+          <MagicButton />
+        </a>
       </div>
     </div>
   );

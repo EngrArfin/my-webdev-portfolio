@@ -1,74 +1,151 @@
+import Image from "next/image";
+import footerphoto from "../../UI/img/arfin.jpeg";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+
 const Footer: React.FC = () => {
   return (
-    <footer className="footer footer-center bg-gray-900 text-primary-content p-10">
-      <aside>
-        <svg
-          width="50"
-          height="50"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          fillRule="evenodd"
-          clipRule="evenodd"
-          className="inline-block fill-current"
-        >
-          <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z" />
-        </svg>
-        <p className="font-bold">
-          Web Developer Portfolio
-          <br />
-          Update Portfolio WebDevArfin
-        </p>
-        <p>Copyright © {new Date().getFullYear()} - arfin</p>
-      </aside>
-      <nav>
-        <div className="grid grid-flow-col gap-4">
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-            </svg>
-          </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-            </svg>
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-            </svg>
-          </a>
+    <footer className="bg-gray-900 text-white py-16 px-6">
+      <div className="max-w-screen-lg mx-auto text-center">
+        {/* Centered Profile Image */}
+        <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg mx-auto mb-8">
+          <Image
+            src={footerphoto}
+            alt="Md Samsel Arfin"
+            width={192}
+            height={192}
+            className="rounded-full"
+            style={{ objectFit: "cover" }}
+          />
         </div>
-      </nav>
+        <h2 className="text-4xl font-bold mb-4">GET IN TOUCH</h2>
+        <p className="text-gray-400 mb-12">
+          Feel free to reach out. I am open to discussing new projects, creative
+          ideas, or opportunities to be part of your visions.
+        </p>
+      </div>
+
+      <div className="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Left Section: Contact Info */}
+        <div>
+          <h3 className="text-3xl font-bold text-white mb-4">
+            DON NOT BE SHY!
+          </h3>
+          <p className="text-gray-400 mb-8">
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas, or opportunities to be part of your
+            visions.
+          </p>
+          <div className="flex items-center mb-4">
+            <div className="bg-yellow-500 p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                className="fill-current text-black"
+              >
+                <path d="M20 4h-16c-1.105 0-2 .895-2 2v12c0 1.105.895 2 2 2h16c1.105 0 2-.895 2-2v-12c0-1.105-.895-2-2-2zm-10 9h-5v-2h5v2zm8 5h-16v-1h16v1zm-10-5h-5v-2h5v2zm5 0h-2v-2h2v2zm5 0h-2v-2h2v2zm-2-5h-10v-2h10v2z" />
+              </svg>
+            </div>
+            <div className="ml-4">
+              <p className="text-white">MAIL ME</p>
+              <p className="text-gray-400">arfin.cse.green.edu.bd@gmail.com</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="bg-yellow-500 p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                className="fill-current text-black"
+              >
+                <path d="M20 15.5c0 1.597-1.156 3.059-2.75 3.467v.533c0 .828-.672 1.5-1.5 1.5h-8c-.828 0-1.5-.672-1.5-1.5v-.533c-1.594-.408-2.75-1.87-2.75-3.467v-7c0-1.597 1.156-3.059 2.75-3.467v-.533c0-.828.672-1.5 1.5-1.5h8c.828 0 1.5.672 1.5 1.5v.533c1.594.408 2.75 1.87 2.75 3.467v7z" />
+              </svg>
+            </div>
+            <div className="ml-4">
+              <p className="text-white">CALL ME</p>
+              <p className="text-gray-400">+8801952487468</p>
+            </div>
+          </div>
+          {/* Social Links */}
+          <div className="flex mt-6 space-x-6">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-500 hover:text-gray-300 transition-colors duration-300 text-3xl"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-500 hover:text-gray-300 transition-colors duration-300 text-3xl"
+            >
+              <AiFillTwitterCircle />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-500 hover:text-gray-300 transition-colors duration-300 text-3xl"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-500 hover:text-gray-300 transition-colors duration-300 text-3xl"
+            >
+              <FaGithub />
+            </a>
+          </div>
+        </div>
+
+        {/* Right Section: Contact Form */}
+        <div>
+          <form className="grid gap-4">
+            <input
+              type="text"
+              placeholder="YOUR NAME"
+              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+            />
+            <input
+              type="email"
+              placeholder="YOUR EMAIL"
+              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+            />
+            <input
+              type="text"
+              placeholder="YOUR SUBJECT"
+              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+            />
+            <textarea
+              placeholder="YOUR MESSAGE"
+              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+              rows={5}
+            ></textarea>
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 rounded-md transition duration-300 flex items-center justify-center">
+              SEND MESSAGE
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="ml-2"
+              >
+                <path d="M3.44 18.719l7.86-6.482-7.861-6.482c-.876-.72-1.261-1.766-1.118-2.764.145-1.027.792-1.921 1.729-2.442 1.004-.555 2.303-.681 3.539-.27 2.498.85 15.11 6.541 15.11 6.541s-12.612 5.692-15.11 6.541c-1.236.411-2.535.285-3.539-.27-.937-.521-1.584-1.415-1.729-2.442-.144-.998.241-2.044 1.118-2.764z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
   );
 };
