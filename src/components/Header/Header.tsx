@@ -1,7 +1,8 @@
 import Image from "next/image";
 import HireMe from "../MagicButton/HireMe";
 /* import bacground from "../../UI/img/bacground.jpg";
- */ import photo from "../../UI/img/arfin1.png";
+ */
+import photo from "../../UI/img/arfin1.png";
 
 const Header: React.FC = () => {
   return (

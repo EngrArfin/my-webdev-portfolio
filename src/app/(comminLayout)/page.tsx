@@ -1,4 +1,5 @@
 import About from "@/components/About/About";
+import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
 import ExpEduAchive from "@/components/ExpEduAchive/ExpEduAchive";
 import Header from "@/components/Header/Header";
 import Portfolio from "@/components/Portfolio/Portfolio";
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Skill />
       <Portfolio />
+      <CourseCertificate />
       <ExpEduAchive />
     </div>
   );
