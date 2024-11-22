@@ -1,4 +1,4 @@
-import Portfolio from "@/components/Portfolio/Portfolio";
+import Portfolio from "@/components/Portfolio/PortfolioData";
 import React from "react";
 
 const portfolioPage = () => {

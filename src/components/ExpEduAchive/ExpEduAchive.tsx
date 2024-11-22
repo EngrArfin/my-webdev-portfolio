@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import { IoBagCheck, IoSchoolSharp } from "react-icons/io5";
 
 const ExpEduAchive: React.FC = () => {
@@ -75,10 +73,8 @@ const ExpEduAchive: React.FC = () => {
         padding: "2rem",
       }}
     >
-      <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Professional Portfolio" />
-      </Head>
+      <title>Portfolio</title>
+
       <h1
         style={{
           textAlign: "center",
