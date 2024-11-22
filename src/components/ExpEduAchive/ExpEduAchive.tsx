@@ -65,137 +65,143 @@ const ExpEduAchive: React.FC = () => {
   ];
 
   return (
-    <div
-      style={{
-        fontFamily: "Arial, sans-serif",
-        background: "black",
-        color: "#fff",
-        padding: "2rem",
-      }}
-    >
-      <title>Portfolio</title>
-
-      <h1
-        style={{
-          textAlign: "center",
-          fontSize: "2.5rem",
-          marginBottom: "2rem",
-          color: "#FFD700",
-        }}
-      >
-        Education & Experience
-      </h1>
+    <div className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white">
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: "2rem",
+          fontFamily: "Arial, sans-serif",
+
+          color: "#fff",
+          padding: "2rem",
         }}
       >
-        {/* Experience Column */}
-        <div style={{ flex: 1, minWidth: "300px" }}>
-          <h2
-            style={{
-              fontSize: "1.8rem",
-              marginBottom: "1rem",
-              color: "#FFD700",
-            }}
-          >
-            Experience
-          </h2>
-          {experience.map((exp, index) => (
-            <div key={index} style={{ marginBottom: "1.5rem" }}>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-              >
+        <title>Portfolio</title>
+
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "2.5rem",
+            marginBottom: "2rem",
+            color: "#FFD700",
+          }}
+        >
+          Education & Experience
+        </h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: "2rem",
+          }}
+        >
+          {/* Experience Column */}
+          <div style={{ flex: 1, minWidth: "300px" }}>
+            <h2
+              style={{
+                fontSize: "1.8rem",
+                marginBottom: "1rem",
+                color: "#FFD700",
+              }}
+            >
+              Experience
+            </h2>
+            {experience.map((exp, index) => (
+              <div key={index} style={{ marginBottom: "1.5rem" }}>
                 <div
+                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+                >
+                  <div
+                    style={{
+                      width: "35px",
+                      height: "35px",
+                      backgroundColor: "red",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div style={{ width: "20px", height: "20px" }}>
+                      <IoBagCheck />
+                    </div>
+                  </div>
+                  <p style={{ color: "#aaa", fontWeight: "bold" }}>
+                    {exp.yearRange}
+                  </p>
+                </div>
+                <h3
                   style={{
-                    width: "35px",
-                    height: "35px",
-                    backgroundColor: "red",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    fontSize: "1.2rem",
+                    margin: "0.5rem 0",
+                    color: "#fff",
                   }}
                 >
-                  <div style={{ width: "20px", height: "20px" }}>
-                    <IoBagCheck />
-                  </div>
-                </div>
-                <p style={{ color: "#aaa", fontWeight: "bold" }}>
-                  {exp.yearRange}
+                  {exp.role}{" "}
+                  <span style={{ color: "#FFD700" }}>— {exp.company}</span>
+                </h3>
+                <p style={{ color: "#ccc", fontSize: "0.95rem" }}>
+                  {exp.description}
+                </p>
+                <p
+                  style={{ color: "#ccc", fontSize: "0.95rem", marginTop: 10 }}
+                >
+                  Skill: {exp.skill}
                 </p>
               </div>
-              <h3
-                style={{
-                  fontSize: "1.2rem",
-                  margin: "0.5rem 0",
-                  color: "#fff",
-                }}
-              >
-                {exp.role}{" "}
-                <span style={{ color: "#FFD700" }}>— {exp.company}</span>
-              </h3>
-              <p style={{ color: "#ccc", fontSize: "0.95rem" }}>
-                {exp.description}
-              </p>
-              <p style={{ color: "#ccc", fontSize: "0.95rem", marginTop: 10 }}>
-                Skill: {exp.skill}
-              </p>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Education Column */}
-        <div style={{ flex: 1, minWidth: "300px" }}>
-          <h2
-            style={{
-              fontSize: "1.8rem",
-              marginBottom: "1rem",
-              color: "#FFD700",
-            }}
-          >
-            Education
-          </h2>
-          {education.map((edu, index) => (
-            <div key={index} style={{ marginBottom: "1.5rem" }}>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-              >
+          {/* Education Column */}
+          <div style={{ flex: 1, minWidth: "300px" }}>
+            <h2
+              style={{
+                fontSize: "1.8rem",
+                marginBottom: "1rem",
+                color: "#FFD700",
+              }}
+            >
+              Education
+            </h2>
+            {education.map((edu, index) => (
+              <div key={index} style={{ marginBottom: "1.5rem" }}>
                 <div
+                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+                >
+                  <div
+                    style={{
+                      width: "35px",
+                      height: "35px",
+                      backgroundColor: "red",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div style={{ width: "20px", height: "20px" }}>
+                      <IoSchoolSharp />
+                    </div>
+                  </div>
+                  <p style={{ color: "#aaa", fontWeight: "bold" }}>
+                    {edu.year}
+                  </p>
+                </div>
+                <h3
                   style={{
-                    width: "35px",
-                    height: "35px",
-                    backgroundColor: "red",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    fontSize: "1.2rem",
+                    margin: "0.5rem 0",
+                    color: "#fff",
                   }}
                 >
-                  <div style={{ width: "20px", height: "20px" }}>
-                    <IoSchoolSharp />
-                  </div>
-                </div>
-                <p style={{ color: "#aaa", fontWeight: "bold" }}>{edu.year}</p>
+                  {edu.degree}{" "}
+                  <span style={{ color: "#FFD700" }}> {edu.institution}</span>
+                </h3>
+                <p style={{ color: "#ccc", fontSize: "0.95rem" }}>
+                  {edu.description}
+                </p>
               </div>
-              <h3
-                style={{
-                  fontSize: "1.2rem",
-                  margin: "0.5rem 0",
-                  color: "#fff",
-                }}
-              >
-                {edu.degree}{" "}
-                <span style={{ color: "#FFD700" }}> {edu.institution}</span>
-              </h3>
-              <p style={{ color: "#ccc", fontSize: "0.95rem" }}>
-                {edu.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

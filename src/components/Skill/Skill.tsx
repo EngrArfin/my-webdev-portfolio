@@ -18,7 +18,7 @@ const skills = [
 
 const Skill: React.FC = () => {
   return (
-    <section className="bg-gray-950 text-white mx-auto ">
+    <section className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white mx-auto ">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold text-yellow-400">MY SKILLS</h2>
         <p className="text-lg mt-2 text-white">

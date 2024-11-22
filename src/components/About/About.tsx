@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="bg-gray-950 text-white ">
+    <div className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white ">
       <div className=" text-white">
         {/* Left Side: Personal Information */}
         <div className="text-white">

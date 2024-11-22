@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="navbar bg-gray-950 text-white">
+    <div className="navbar bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

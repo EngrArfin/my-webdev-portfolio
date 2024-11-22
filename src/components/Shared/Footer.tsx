@@ -5,7 +5,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-950 text-white py-16 px-6">
+    <footer className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white py-16 px-6">
       <div className="max-w-screen-lg mx-auto text-center">
         <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg mx-auto mb-8">
           <Image
@@ -144,6 +144,7 @@ const Footer: React.FC = () => {
           </form>
         </div>
       </div>
+      <hr />
     </footer>
   );
 };

@@ -114,7 +114,7 @@ const PortfolioData = () => {
   };
 
   return (
-    <div className="portfolio-container bg-gray-950 text-gray-800 p-6">
+    <div className="portfolio-container bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white p-6">
       <h1 className="text-4xl text-yellow-400 font-bold text-center mb-8">
         My Portfolio
       </h1>
