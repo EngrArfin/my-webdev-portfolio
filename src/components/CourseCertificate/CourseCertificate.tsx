@@ -26,7 +26,7 @@ const certificates = [
     id: 2,
     title: "Software Quality Assurance & Test Automation Expert",
     description:
-      "In this course, I gained comprehensive knowledge about the essentials of Software Quality Assurance (SQA) and Test Automation. This program involved working on a variety of real-world projects, including a web application that visualizes personalized Spotify data. The app allows users to view their top artists, top tracks, recently played tracks, and detailed audio information. I also worked on creating and saving new playlists based on users' existing playlists, applying industry-standard testing tools and methodologies to ensure the software works efficiently and reliably.",
+      " I gained comprehensive knowledge about the essentials of Software Quality Assurance (SQA) and Test Automation. This program involved working on a variety of real-world projects, including a web application that visualizes personalized Spotify data. The app allows users to view their top artists, top tracks, recently played tracks, and detailed audio information. I also worked on creating and saving new playlists based on users' existing playlists, applying industry-standard testing tools and methodologies to ensure the software works efficiently and reliably.",
     image: certificate2,
   },
   {
@@ -45,7 +45,7 @@ const certificates = [
   },
   {
     id: 5,
-    title: "Data Science and Machine Learning with Python",
+    title: "Data Science with Python",
     description:
       "In this course, I delved into the world of data science using Python. I learned how to work with various data analysis and visualization libraries such as Pandas, Matplotlib, and Seaborn to extract valuable insights from data. Additionally, I explored machine learning algorithms, including linear regression, decision trees, and clustering, enabling me to develop predictive models. This certification has equipped me with the skills to analyze large datasets, build machine learning models, and present actionable insights to solve real-world business problems.",
     image: certificate5,
