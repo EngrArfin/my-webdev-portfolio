@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { PiCertificateFill } from "react-icons/pi";
 
-// Importing certificates
 import certificate1 from "../../UI/certificate/1ProgramingHero.jpg";
 import certificate2 from "../../UI/certificate/2SoftwareTest.jpg";
 import certificate3 from "../../UI/certificate/3msword.jpg";
@@ -120,7 +119,6 @@ const CourseCertificate = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            {/* Text Section */}
             <div className="md:w-1/2 text-center md:text-left space-y-2">
               <h2 className="text-2xl text-yellow-400 font-semibold mb-2 flex items-center gap-2 justify-center md:justify-start">
                 <PiCertificateFill /> {certificate.title}
@@ -130,7 +128,6 @@ const CourseCertificate = () => {
               </p>
             </div>
 
-            {/* Image Section */}
             <div className="md:w-1/2 flex justify-center items-center">
               <div className="w-80 h-60 bg-purple-800 rounded-lg overflow-hidden shadow-lg">
                 <Image

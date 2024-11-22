@@ -151,7 +151,6 @@ const ExpEduAchive: React.FC = () => {
             ))}
           </div>
 
-          {/* Education Column */}
           <div style={{ flex: 1, minWidth: "300px" }}>
             <h2
               style={{

@@ -2,7 +2,6 @@ const About = () => {
   return (
     <div className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white ">
       <div className=" text-white">
-        {/* Left Side: Personal Information */}
         <div className="text-white">
           <h1 className=" flex justify-center items-center text-5xl font-bold text-yellow-500  pt-5 pb-3">
             About Me
@@ -41,8 +40,6 @@ const About = () => {
           high-performance, scalable applications.
         </p>
       </div>
-
-      {/* Left Side: Personal Information */}
 
       <div>
         <div className="min-h-screen  text-white ">
@@ -101,10 +98,8 @@ const About = () => {
                 </ul>
               </div>
 
-              {/* Right Side: Experience and Achievements */}
               <div>
                 <div className="grid grid-cols-2 gap-6">
-                  {/* Cards */}
                   <div className="bg-red-800 p-6 rounded-lg text-center shadow-md">
                     <h3 className="text-5xl font-extrabold text-yellow-400">
                       2+

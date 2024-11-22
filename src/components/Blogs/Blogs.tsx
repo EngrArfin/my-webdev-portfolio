@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-// Type definitions for blog post data
 interface BlogPost {
   id: number;
   title: string;
@@ -12,7 +11,6 @@ interface BlogPost {
   slug: string;
 }
 
-// Sample blog posts data (for demonstration purposes)
 const samplePosts: BlogPost[] = [
   {
     id: 1,

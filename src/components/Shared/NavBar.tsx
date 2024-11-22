@@ -64,7 +64,10 @@ const Navbar: React.FC = () => {
       </div>
 
       <div className="navbar-end">
-        <a href="#" className="">
+        <a
+          href="https://drive.google.com/file/d/1aRrbl5j7DXkQM31gCqQS6ZwOn0ysYYua/view?usp=sharing"
+          className=""
+        >
           <MagicButton />
         </a>
       </div>
