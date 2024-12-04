@@ -1,7 +1,8 @@
 Deployment
 my-webdev-portfolio-2wbimcwpk-engrarfins-projects.vercel.app
 Domains
-my-webdev-portfolio-hazel.vercel.app
+
+http://localhost:3000
 
 ---
 

@@ -2,18 +2,22 @@
 import React from "react";
 
 const skills = [
-  { name: "HTML", value: 92 },
+  { name: "HTML", value: 95 },
   { name: "CSS", value: 90 },
   { name: "JavaScript", value: 70 },
+  { name: "TypeScript", value: 85 },
   { name: "Bootstrap", value: 85 },
   { name: "React.js", value: 80 },
-  { name: "Tailwind", value: 60 },
+  { name: "Next.js", value: 85 },
+  { name: "Redux.js", value: 83 },
+  { name: "Tailwind CSS", value: 60 },
   { name: "Firebase", value: 95 },
+  { name: "ReactRouter", value: 85 },
   { name: "MongoDB", value: 69 },
   { name: "Express.js", value: 85 },
   { name: "Node.js", value: 70 },
   { name: "SQL", value: 75 },
-  { name: "JWT", value: 65 },
+  { name: "JWT", value: 87 },
 ];
 
 const Skill: React.FC = () => {

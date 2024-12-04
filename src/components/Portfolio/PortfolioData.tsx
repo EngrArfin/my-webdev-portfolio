@@ -7,76 +7,81 @@ import { Project } from "@/types";
 import project1 from "../../UI/project/Projectphoto1.jpg";
 import project2 from "../../UI/project/Projectphoto2.jpg";
 import project3 from "../../UI/project/Projectphoto3.jpg";
-import project4 from "../../UI/project/Projectphoto4.jpg";
+/* import project4 from "../../UI/project/Projectphoto4.jpg";
 import project5 from "../../UI/project/Projectphoto5.jpg";
-import project6 from "../../UI/project/Projectphoto6.jpg";
+import project6 from "../../UI/project/Projectphoto6.jpg"; */
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Sportz Car",
+    title: "E Com Zone: E-Commerce Online Platform",
     image: project1,
     type: "Personal Project",
-    projectType: "Website",
+    projectType: " E Commerce Website",
     technologies:
-      "DaisyUI, React Router, JSON Web Token (JWT), Firebase, Tailwind CSS, React.js, MongoDB",
+      "Next.js · TypeScript, Tailwind CSS, Express.js · MongoDB · NextAuth · axios js · ESLint , DaisyUI, JSON Web Token (JWT)",
     description:
-      "Sportz Car is a dynamic website that allows users to showcase and manage their collection of sports cars.",
-    liveLink: "https://example.com/live",
-    gitClient: "https://github.com/example-client",
+      "E Com Zone is a modern, responsive e-commerce website built with Next.js, TypeScript, and Tailwind CSS. It integrates secure user authentication, dynamic product management, and a streamlined shopping experience ",
+    liveLink: "https://e-commerce-web-nextjs-client-app.vercel.app/",
+    gitClient: "https://github.com/EngrArfin/e-commerce-web-nextjs-client-app",
     gitServer: "https://github.com/example-server",
   },
   {
     id: 2,
-    title: "Job Hunter",
+    title: "Meeting Room Booking System ",
     image: project2,
     type: "Personal Project",
     projectType: "Website",
-    technologies: "React, Tailwind CSS, Firebase",
+    technologies:
+      "Frontend: React, Redux, Axios, Tailwaind CSS, jwt-decode, Ant Design,react-dom Backend: TypeScript, Node, Express, MongoDB, Mongoose, Zod.",
     description:
-      "Job Hunter is a platform that helps users search for their dream job by filtering through various categories.",
-    liveLink: "https://example.com/live2",
-    gitClient: "https://github.com/example-client2",
-    gitServer: "https://github.com/example-server2",
+      "Meeting rooms, built with React, Redux, and Node.js. It features secure authentication via NextAuth, dynamic room availability, and booking management. The backend uses Express and MongoDB for data handling, with Axios for seamless API integration. Designed for efficiency and responsiveness. and  TypeScript-based backend for managing room bookings, built with Node.js, Express, and MongoDB. Features secure NextAuth authentication, RESTful APIs for booking and room management, and robust data handling.",
+    liveLink: "https://meeting-room-booking-systrm-client-app.vercel.app/",
+    gitClient:
+      "https://github.com/EngrArfin/meeting-room-booking-systrm-client-app",
+    gitServer: "https://github.com/EngrArfin/meeting-room-booking-system",
   },
   {
     id: 3,
-    title: "Job Hunter",
+    title: "SAR Shop(E-Commerce Website for Clothing Fashion and Electronic)",
     image: project3,
     type: "Personal Project",
     projectType: "Website",
-    technologies: "React, Tailwind CSS, Firebase",
+    technologies:
+      " HTML, CSS, Tailwind CSS,  Express.js, MongoDB, Firebase, axios js, JWT, stipe.js,  DaisyUI",
     description:
-      "Job Hunter is a platform that helps users search for their dream job by filtering through various categories.",
-    liveLink: "https://example.com/live2",
-    gitClient: "https://github.com/example-client2",
-    gitServer: "https://github.com/example-server2",
+      "SAR Shop Frontend is a responsive e-commerce application for clothing and electronics. Built with React, HTML, CSS, Tailwind CSS, and DaisyUI, it offers a sleek design, Firebase authentication, and seamless API integration via Axios.",
+    liveLink: "https://job-task-6e505.web.app",
+    gitClient: "https://github.com/EngrArfin/job-task-shop-client",
+    gitServer: "https://github.com/EngrArfin/job-task-shop-server",
   },
-  {
+  /* {
     id: 4,
-    title: "Job Hunter",
+    title: "SA Food Restaurant",
     image: project4,
     type: "Personal Project",
     projectType: "Website",
-    technologies: "React, Tailwind CSS, Firebase",
+    technologies:
+      "HTML · CSS · Tailwind CSS · React · Express.js · MongoDB · Firebase · JWT · Bootstrap · stripe.js",
     description:
-      "Job Hunter is a platform that helps users search for their dream job by filtering through various categories.",
-    liveLink: "https://example.com/live2",
-    gitClient: "https://github.com/example-client2",
-    gitServer: "https://github.com/example-server2",
+      "SA Food Restaurant is project leverages technologies such as HTML, CSS, Tailwind CSS, DaisyUI, and React to create an elegant and responsive user interface. The back-end integration with Express.js and MongoDB ensures smooth data handling, while Firebase enhances authentication and real-time features. The application utilizes Axios.js for efficient API communication, JWT for secure user sessions, and Stripe.js for seamless payment processing.",
+    liveLink: " https://sa-food-reasturent.netlify.app/",
+    gitClient: "https://github.com/EngrArfin/bistro-boss-client",
+    gitServer: "https://github.com/EngrArfin/bistro-boss-server",
   },
   {
     id: 5,
-    title: "Job Hunter",
+    title: "Health Complex -Hospital-Magura",
     image: project5,
-    type: "Personal Project",
+    type: "Hospital Project",
     projectType: "Website",
-    technologies: "React, Tailwind CSS, Firebase",
+    technologies:
+      "HTML5, CSS, Tailwind CSS, JavaScript,  Express.js, Firebase, MongoDB, Reactjs, JWT",
     description:
-      "Job Hunter is a platform that helps users search for their dream job by filtering through various categories.",
-    liveLink: "https://example.com/live2",
-    gitClient: "https://github.com/example-client2",
-    gitServer: "https://github.com/example-server2",
+      "Hospital's range of medical services includes general medicine, surgery, emergency services and specialized care in various fields and aims to provide digital services.",
+    liveLink: "https://mohammadpur-hospital-magura.netlify.app/",
+    gitClient: "https://github.com/EngrArfin/doctor-house-client",
+    gitServer: "https://github.com/EngrArfin/doctor-house-server",
   },
   {
     id: 6,
@@ -87,10 +92,10 @@ const projects: Project[] = [
     technologies: "React, Tailwind CSS, Firebase",
     description:
       "Job Hunter is a platform that helps users search for their dream job by filtering through various categories.",
-    liveLink: "https://example.com/live2",
+    liveLink: "https://aiaffibot.xyz",
     gitClient: "https://github.com/example-client2",
     gitServer: "https://github.com/example-server2",
-  },
+  }, */
 ];
 
 const PortfolioData = () => {
@@ -180,6 +185,7 @@ const PortfolioData = () => {
             >
               🔗 Live Link
             </a>
+
             <a
               href={selectedProject.gitClient}
               target="_blank"

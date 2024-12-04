@@ -12,7 +12,10 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-icons/all-files": "^4.1.0",
+    "bcrypt": "^5.1.1",
+    "mongodb": "^6.11.0",
     "next": "^15.0.3",
+    "next-auth": "^4.24.10",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
@@ -23,6 +26,9 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/mongodb": "^4.0.6",
+    "@types/next-auth": "^3.13.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
