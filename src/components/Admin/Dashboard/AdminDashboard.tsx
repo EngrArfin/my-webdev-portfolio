@@ -1,10 +1,8 @@
-// pages/admin/index.js
 import Link from "next/link";
 
 const AdminDashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Header Section */}
       <header className="bg-indigo-600 text-white py-6">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold">
@@ -16,10 +14,8 @@ const AdminDashboard = () => {
         </div>
       </header>
 
-      {/* Main Content Section */}
       <div className="container mx-auto px-6 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Manage Projects Card */}
           <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-semibold">Manage Projects</h3>
@@ -36,7 +32,6 @@ const AdminDashboard = () => {
             </Link>
           </div>
 
-          {/* View Messages Card */}
           <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-semibold">View Messages</h3>
@@ -53,7 +48,6 @@ const AdminDashboard = () => {
             </Link>
           </div>
 
-          {/* Manage Profile Card */}
           <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-semibold">Manage Profile</h3>
@@ -70,7 +64,6 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* Admin Statistics Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow">
             <h3 className="text-2xl font-semibold mb-4">Total Projects</h3>

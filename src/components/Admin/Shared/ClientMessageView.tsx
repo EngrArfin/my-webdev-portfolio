@@ -1,5 +1,4 @@
 const ClientMessageView = () => {
-  // Static client messages with updated names and emails
   const messages = [
     {
       id: 1,

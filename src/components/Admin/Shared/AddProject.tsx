@@ -109,7 +109,6 @@ const AddProject = () => {
           />
         </div>
 
-        {/* Category */}
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -133,7 +132,6 @@ const AddProject = () => {
           </select>
         </div>
 
-        {/* GitHub Client Link */}
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -151,7 +149,6 @@ const AddProject = () => {
           />
         </div>
 
-        {/* GitHub Server Link */}
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -169,7 +166,6 @@ const AddProject = () => {
           />
         </div>
 
-        {/* Project Live Link */}
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -187,7 +183,6 @@ const AddProject = () => {
           />
         </div>
 
-        {/* Project Images */}
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"

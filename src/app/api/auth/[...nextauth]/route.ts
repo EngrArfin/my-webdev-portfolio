@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { connectDB } from "@/lib/connectDB";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
@@ -15,7 +16,7 @@ interface User {
 const handler = NextAuth({
   session: {
     strategy: "jwt",
-    maxAge: 30 * 24 * 60 * 60, // 30 days
+    maxAge: 30 * 24 * 60 * 60,
   },
   providers: [
     CredentialsProvider({
@@ -69,20 +70,19 @@ const handler = NextAuth({
   ],
 
   pages: {
-    signIn: "/login", // Custom sign-in page
+    signIn: "/login",
   },
 
   callbacks: {
     async signIn({ user, account }) {
       const { name, email, image } = user;
 
-      // Check if account exists and its provider is "github"
       if (account?.provider === "github") {
         console.log("GitHub user data:", user);
 
         if (!email) {
           console.log("GitHub user has no email.");
-          return false; // Block sign-in if email is missing
+          return false;
         }
       }
 
@@ -90,7 +90,6 @@ const handler = NextAuth({
         const db = await connectDB();
         const userCollection = db?.collection("admins");
 
-        // Ensure `account` is not null before using it
         if (!account) {
           console.log("Account is null or undefined");
           return false;
@@ -103,7 +102,7 @@ const handler = NextAuth({
             name,
             email,
             image,
-            provider: account.provider, // Safe access since we've checked `account`
+            provider: account.provider,
           });
           console.log("New user inserted");
         } else {
@@ -118,7 +117,7 @@ const handler = NextAuth({
     },
   },
 
-  secret: process.env.NEXTAUTH_SECRET, // Add your secret here
+  secret: process.env.NEXTAUTH_SECRET,
 });
 
 export { handler as GET, handler as POST };

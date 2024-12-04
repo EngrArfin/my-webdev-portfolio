@@ -38,7 +38,6 @@ const Projects = () => {
             key={project.id}
             className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row"
           >
-            {/* Project Image */}
             <div className="w-full md:w-1/3">
               <Image
                 src={project.image}
@@ -50,7 +49,6 @@ const Projects = () => {
               />
             </div>
 
-            {/* Project Details */}
             <div className="p-6 flex flex-col justify-between">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">
                 {project.title}
