@@ -2,6 +2,7 @@ import About from "@/components/About/About";
 import Blogs from "@/components/Blogs/Blogs";
 import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
 import ExpEduAchive from "@/components/ExpEduAchive/ExpEduAchive";
+import ExperienceInfo from "@/components/ExperienceInfo/ExperienceInfo";
 import Header from "@/components/Header/Header";
 import PortfolioData from "@/components/Portfolio/PortfolioData";
 import Skill from "@/components/Skill/Skill";
@@ -12,6 +13,7 @@ export default function Home() {
       <hr />
       <Header />
       <About />
+      <ExperienceInfo />
       <Skill />
       <PortfolioData />
       <CourseCertificate />

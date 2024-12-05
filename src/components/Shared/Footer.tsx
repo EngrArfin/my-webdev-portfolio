@@ -2,6 +2,7 @@ import Image from "next/image";
 import footerphoto from "../../UI/img/arfin.jpeg";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { IoMdLogIn } from "react-icons/io";
 
 const Footer: React.FC = () => {
   return (
@@ -102,6 +103,15 @@ const Footer: React.FC = () => {
               className="text-yellow-500 hover:text-gray-300 transition-colors duration-300 text-3xl"
             >
               <FaGithub />
+            </a>
+
+            <a
+              href="/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-500 hover:text-gray-300 transition-colors duration-300 text-3xl"
+            >
+              <IoMdLogIn />
             </a>
           </div>
         </div>
