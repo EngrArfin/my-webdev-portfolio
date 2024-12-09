@@ -12,3 +12,22 @@ export interface Project {
   gitClient: string;
   gitServer: string;
 }
+
+// types/index.ts
+export interface TService {
+  _id: string;
+  id: number;
+  title: string;
+  content: string;
+  date: string;
+  image: string;
+}
+
+export interface TServiceDetails {
+  _id: string;
+
+  title: string;
+  content: string;
+  date: string;
+  image: string;
+}

@@ -4,6 +4,7 @@ import { useState } from "react";
 interface Project {
   title: string;
   description: string;
+  technologies: string;
   date: string;
   category: string;
   githubClientLink: string;
@@ -16,6 +17,7 @@ const AddProject = () => {
   const [project, setProject] = useState<Project>({
     title: "",
     description: "",
+    technologies: "",
     date: "",
     category: "",
     githubClientLink: "",
@@ -79,8 +81,26 @@ const AddProject = () => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="description"
           >
+            Technologies
+          </label>
+
+          <textarea
+            id="description"
+            name="description"
+            value={project.technologies}
+            onChange={handleChange}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="description"
+          >
             Project Description
           </label>
+
           <textarea
             id="description"
             name="description"

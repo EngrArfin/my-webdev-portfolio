@@ -33,7 +33,7 @@ const CardItem: React.FC<{
         marginBottom: "1.5rem",
         padding: "1rem",
         borderRadius: "10px",
-        backgroundColor: isHovered ? "#900" : "#600", // Red card color
+        backgroundColor: isHovered ? "#1a202c" : "#2d3748", // Updated to gray-900 and gray-800
         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",
         transition: "transform 0.3s, background-color 0.3s",
         transform: isHovered ? "scale(1.05)" : "scale(1)",
@@ -141,77 +141,76 @@ const ExpEduAchive: React.FC = () => {
   ];
 
   return (
-    <div
-      className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white"
-      style={{
-        overflowY: "scroll",
-        height: "100vh",
-        scrollBehavior: "smooth",
-        fontFamily: "Arial, sans-serif",
-        padding: "2rem",
-      }}
-    >
-      <h1
-        style={{
-          textAlign: "center",
-          fontSize: "2.5rem",
-          marginBottom: "2rem",
-          color: "#FFD700",
-        }}
-      >
-        Education & Experience
-      </h1>
+    <div className="mt-10 m-8 flex flex-col md:flex-row justify-between items-center bg-gray-800 p-6 rounded-lg shadow-md">
       <div
+        className="bg-gray-800 text-white"
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: "2rem",
+          fontFamily: "Arial, sans-serif",
+          padding: "2rem",
         }}
       >
-        {/* Experience Section */}
-        <div style={{ flex: 1, minWidth: "300px" }}>
-          <h2
-            style={{
-              fontSize: "1.8rem",
-              marginBottom: "1rem",
-              color: "#FFD700",
-            }}
-          >
-            Experience
-          </h2>
-          {experience.map((exp, index) => (
-            <CardItem
-              key={index}
-              icon={<IoBagCheck style={{ color: "red" }} />} // Icon color yellow
-              title={exp.yearRange}
-              subtitle={`${exp.role} — ${exp.company}`}
-              description={exp.description}
-              skill={exp.skill}
-            />
-          ))}
-        </div>
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "2.5rem",
+            marginBottom: "2rem",
+            color: "#FFD700",
+          }}
+        >
+          Education & Experience
+        </h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: "2rem",
+          }}
+        >
+          {/* Experience Section */}
+          <div style={{ flex: 1, minWidth: "300px" }}>
+            <h2
+              style={{
+                fontSize: "1.8rem",
+                marginBottom: "1rem",
+                color: "#FFD700",
+              }}
+            >
+              Experience
+            </h2>
+            {experience.map((exp, index) => (
+              <CardItem
+                key={index}
+                icon={<IoBagCheck style={{ color: "#111827" }} />} // Icon color yellow
+                title={exp.yearRange}
+                subtitle={`${exp.role} — ${exp.company}`}
+                description={exp.description}
+                skill={exp.skill}
+              />
+            ))}
+          </div>
 
-        {/* Education Section */}
-        <div style={{ flex: 1, minWidth: "300px" }}>
-          <h2
-            style={{
-              fontSize: "1.8rem",
-              marginBottom: "1rem",
-              color: "#FFD700",
-            }}
-          >
-            Education
-          </h2>
-          {education.map((edu, index) => (
-            <CardItem
-              key={index}
-              icon={<IoSchoolSharp style={{ color: "red" }} />} // Icon color yellow
-              title={edu.year}
-              subtitle={`${edu.degree} — ${edu.institution}`}
-              description={edu.description}
-            />
-          ))}
+          {/* Education Section */}
+          <div style={{ flex: 1, minWidth: "300px" }}>
+            <h2
+              style={{
+                fontSize: "1.8rem",
+                marginBottom: "1rem",
+                color: "#FFD700",
+              }}
+            >
+              Education
+            </h2>
+            {education.map((edu, index) => (
+              <CardItem
+                key={index}
+                icon={<IoSchoolSharp style={{ color: "#111827" }} />} // Icon color yellow
+                title={edu.year}
+                subtitle={`${edu.degree} — ${edu.institution}`}
+                description={edu.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -1,40 +1,42 @@
 import Image from "next/image";
 import HireMe from "../MagicButton/HireMe";
-
 import photo from "../../UI/img/arfin1.png";
 
 const Header: React.FC = () => {
   return (
-    <div className=" hero min-h-screen ">
-      <div className=" bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white hero-overlay bg-opacity-60"></div>
-      <div className="hero-content flex flex-col lg:flex-row items-center text-neutral-content">
-        <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg lg:mr-8 mb-6 lg:mb-0">
+    <div className="hero min-h-screen bg-gradient-to-b from-gray-950 via-gray-900  text-white relative">
+      <div className="absolute inset-0 bg-gray-800 opacity-50"></div>
+
+      <div className="hero-content flex flex-col lg:flex-row items-center text-neutral-content relative z-10 px-6">
+        {/* Profile Image Section */}
+        <div className="w-40 h-40 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-[#EAEAEA] shadow-lg lg:mr-12 mb-6 lg:mb-0">
           <Image
             src={photo || "/photo.png"}
             alt="Md Samsel Arfin"
-            width={192}
-            height={192}
+            width={256}
+            height={256}
             className="rounded-full"
             style={{ objectFit: "cover" }}
           />
         </div>
 
+        {/* Text Content Section */}
         <div className="max-w-lg text-center lg:text-left">
-          <h1 className="mb-2 text-4xl font-bold text-gray-100">
-            I am <span className="text-yellow-500">Md Samsel Arfin.</span>
+          <h1 className="mb-4 text-4xl font-extrabold text-[#FFD700] leading-tight">
+            Hi, I am <span className="text-[#FFC107]">Md Samsel Arfin</span>.
           </h1>
-          <span className="text-2xl font-bold text-sky-400">
-            MERN Full Stack Developer
-          </span>
-
-          <p className="mb-5 mt-5 text-base text-gray-300 leading-relaxed">
-            I have completed my BSc in Computer Science & Engineering. In
-            addition to being a MERN Stack developer, I have expertise in Java,
-            WordPress, UI/UX Design, and Digital Marketing. I am passionate
-            about learning new technologies and continuously improving my
-            skills.
+          <p className="text-xl text-[#D9D9D9] font-medium mb-4">
+            MERN Full Stack Developer & UI/UX Enthusiast
           </p>
 
+          <p className="mb-6 text-lg text-[#D9D9D9] leading-relaxed">
+            With a BSc in Computer Science & Engineering, I specialize in MERN
+            stack development. I am also skilled in Java, WordPress, UI/UX
+            Design, and Digital Marketing. Constantly learning, I’m passionate
+            about crafting clean, efficient, and scalable web applications.
+          </p>
+
+          {/* Hire Me Button */}
           <div className="flex justify-center lg:justify-start">
             <HireMe />
           </div>

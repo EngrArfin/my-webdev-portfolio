@@ -1,6 +1,5 @@
 "use client";
 import { signOut, useSession } from "next-auth/react";
-
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -16,92 +15,95 @@ const Dashboard = () => {
   const { data: session } = useSession();
   const router = useRouter();
 
+  // Handle logout functionality
   const handleLogout = async () => {
     await signOut({ redirect: false });
     router.push("/");
   };
 
   return (
-    <div className="min-h-full flex-shrink-0 w-64 h-full bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white ">
-      <div className="flex flex-col items-center justify-center my-4">
-        {session && (
-          <>
-            <div className="dropdown dropdown-end">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost btn-circle avatar"
-              >
-                <div className="w-40 rounded-full">
-                  <Image
-                    alt="Profile"
-                    src={session.user?.image || "/default-profile.png"}
-                    height="100"
-                    width="100"
-                  />
+    <div className="min-h-screen flex">
+      {/* Sidebar */}
+      <div className="w-64 bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white shadow-lg">
+        <div className="flex flex-col items-center py-6">
+          {session && (
+            <>
+              <div className="dropdown dropdown-end mb-4">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle avatar"
+                >
+                  <div className="w-24 h-24 rounded-full overflow-hidden">
+                    <Image
+                      alt="Profile"
+                      src={session.user?.image || "/default-profile.png"}
+                      height={96}
+                      width={96}
+                    />
+                  </div>
                 </div>
+                <ul
+                  tabIndex={0}
+                  className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li>
+                    <Link href="/admin/settings">Settings</Link>
+                  </li>
+                </ul>
               </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li>
-                  <Link href="/admin/settings">Settings</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="text-center mt-2">
-              <p className="font-semibold">{session.user?.name}</p>
-              <p className="text-sm text-gray-600">{session.user?.email}</p>
-            </div>
-          </>
-        )}
+              <div className="text-center">
+                <p className="text-lg font-semibold">{session.user?.name}</p>
+                <p className="text-sm text-gray-400">{session.user?.email}</p>
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Navigation Menu */}
+        <ul className="menu space-y-2">
+          <li>
+            <Link
+              href="/admin"
+              className="flex items-center p-4 hover:bg-sky-800 rounded-lg transition duration-200 ease-in-out"
+            >
+              <FaTachometerAlt className="mr-3 text-xl" /> Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/admin/project"
+              className="flex items-center p-4 hover:bg-sky-800 rounded-lg transition duration-200 ease-in-out"
+            >
+              <FaUserCog className="mr-3 text-xl" /> All Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/admin/addproject"
+              className="flex items-center p-4 hover:bg-sky-800 rounded-lg transition duration-200 ease-in-out"
+            >
+              <FaPlusSquare className="mr-3 text-xl" /> Add Project
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/admin/clientmessage"
+              className="flex items-center p-4 hover:bg-sky-800 rounded-lg transition duration-200 ease-in-out"
+            >
+              <FaListUl className="mr-3 text-xl" /> Client Messages
+            </Link>
+          </li>
+          <li>
+            <button
+              onClick={handleLogout}
+              className="flex items-center p-4 text-red-600 hover:bg-red-700 hover:text-white rounded-lg transition duration-200 ease-in-out"
+            >
+              <FaSignOutAlt className="mr-3 text-xl" /> Logout
+            </button>
+          </li>
+        </ul>
       </div>
-
-      <ul className="menu max-h-screen overflow-y-auto">
-        <li>
-          <Link
-            href="/admin"
-            className="flex items-center p-4 hover:bg-base-300 rounded"
-          >
-            <FaTachometerAlt className="mr-2" /> Dashboard
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/admin/project"
-            className="flex items-center p-4 hover:bg-base-300 rounded"
-          >
-            <FaUserCog className="mr-2" /> All Project
-          </Link>
-        </li>
-        <li></li>
-        <li>
-          <Link
-            href="/admin/addproject"
-            className="flex items-center p-4 hover:bg-base-300 rounded"
-          >
-            <FaPlusSquare className="mr-2" /> Add Project
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/admin/clientmessage"
-            className="flex items-center p-4 hover:bg-base-300 rounded"
-          >
-            <FaListUl className="mr-2" /> Client Message View
-          </Link>
-        </li>
-
-        <li>
-          <button
-            onClick={handleLogout}
-            className="flex items-center p-4 text-red-600 hover:bg-base-300 rounded"
-          >
-            <FaSignOutAlt className="mr-2" /> Logout
-          </button>
-        </li>
-      </ul>
     </div>
   );
 };

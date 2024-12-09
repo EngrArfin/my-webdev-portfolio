@@ -6,7 +6,7 @@ import { IoMdLogIn } from "react-icons/io";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white py-16 px-6">
+    <footer className="bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white py-16 px-6">
       <div className="max-w-screen-lg mx-auto text-center">
         <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg mx-auto mb-8">
           <Image
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         <h2 className="text-4xl text-yellow-500 font-bold mb-4">
           GET IN TOUCH
         </h2>
-        <p className="text-gray-400 mb-12">
+        <p className="text-white mb-12">
           Feel free to reach out. I am open to discussing new projects, creative
           ideas, or opportunities to be part of your visions.
         </p>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           <h3 className="text-3xl font-bold text-yellow-500 mb-4">
             DON NOT BE SHY!
           </h3>
-          <p className="text-gray-400 mb-8">
+          <p className="text-white mb-8">
             Feel free to get in touch with me. I am always open to discussing
             new projects, creative ideas, or opportunities to be part of your
             visions.
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="ml-4">
               <p className="text-white">MAIL ME</p>
-              <p className="text-gray-400">arfin.cse.green.edu.bd@gmail.com</p>
+              <p className="text-white">arfin.cse.green.edu.bd@gmail.com</p>
             </div>
           </div>
           <div className="flex items-center">
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="ml-4">
               <p className="text-white">CALL ME</p>
-              <p className="text-gray-400">+8801952487468</p>
+              <p className="text-white">+8801952487468</p>
             </div>
           </div>
           <div className="flex mt-6 space-x-6">
@@ -121,24 +121,24 @@ const Footer: React.FC = () => {
             <input
               type="text"
               placeholder="YOUR NAME"
-              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+              className="w-full p-3 bg-gray-800 rounded-md text-white placeholder-gray-100"
             />
             <input
               type="email"
               placeholder="YOUR EMAIL"
-              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+              className="w-full p-3 bg-gray-800 rounded-md text-white placeholder-gray-100"
             />
             <input
               type="text"
               placeholder="YOUR SUBJECT"
-              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+              className="w-full p-3 bg-gray-800 rounded-md text-white placeholder-gray-100"
             />
             <textarea
               placeholder="YOUR MESSAGE"
-              className="w-full p-3 bg-gray-800 rounded-md text-gray-400 placeholder-gray-500"
+              className="w-full p-3 bg-gray-800 rounded-md text-white placeholder-gray-100"
               rows={5}
             ></textarea>
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 rounded-md transition duration-300 flex items-center justify-center">
+            <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 rounded-md transition duration-300 flex items-center justify-center">
               SEND MESSAGE
               <svg
                 xmlns="http://www.w3.org/2000/svg"

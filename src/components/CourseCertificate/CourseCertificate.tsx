@@ -101,46 +101,48 @@ const CourseCertificate = () => {
   }, []);
 
   return (
-    <div className=" min-h-screen bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white flex flex-col justify-center items-center py-16">
-      <div className="ml-10 container mx-auto px-4 space-y-16">
-        <h1 className="text-4xl font-bold text-yellow-400 mb-12 text-center">
-          Certificates & Achievements
-        </h1>
+    <div className="mt-10 m-8 flex flex-col md:flex-row justify-between items-center bg-gray-800 p-6 rounded-lg shadow-md">
+      <div className=" min-h-screen bg-gray-800   text-white flex flex-col justify-center items-center py-16">
+        <div className="ml-10 container mx-auto px-4 space-y-16">
+          <h1 className="text-4xl font-bold text-yellow-400 mb-12 text-center">
+            Certificates & Achievements
+          </h1>
 
-        {certificates.map((certificate, index) => (
-          <div
-            id={`certificate-${index}`}
-            key={certificate.id}
-            className={`flex flex-col ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            } items-center gap-6 transition-all duration-700 transform ${
-              visibleIndex >= index
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="md:w-1/2 text-center md:text-left space-y-2">
-              <h2 className="text-2xl text-yellow-400 font-semibold mb-2 flex items-center gap-2 justify-center md:justify-start">
-                <PiCertificateFill /> {certificate.title}
-              </h2>
-              <p className="text-sm text-gray-300 whitespace-pre-line">
-                {certificate.description}
-              </p>
-            </div>
+          {certificates.map((certificate, index) => (
+            <div
+              id={`certificate-${index}`}
+              key={certificate.id}
+              className={`flex flex-col ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              } items-center gap-6 transition-all duration-700 transform ${
+                visibleIndex >= index
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
+              }`}
+            >
+              <div className="md:w-1/2 text-center md:text-left space-y-2">
+                <h2 className="text-2xl text-yellow-400 font-semibold mb-2 flex items-center gap-2 justify-center md:justify-start">
+                  <PiCertificateFill /> {certificate.title}
+                </h2>
+                <p className="text-sm text-gray-300 whitespace-pre-line">
+                  {certificate.description}
+                </p>
+              </div>
 
-            <div className="md:w-1/2 flex justify-center items-center">
-              <div className="w-80 h-60 bg-purple-800 rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src={certificate.image}
-                  alt={certificate.title}
-                  height={300}
-                  width={400}
-                  className="object-cover w-full h-full"
-                />
+              <div className="md:w-1/2 flex justify-center items-center">
+                <div className="w-80 h-60 bg-purple-800 rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={certificate.image}
+                    alt={certificate.title}
+                    height={300}
+                    width={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

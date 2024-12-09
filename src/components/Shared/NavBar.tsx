@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="navbar bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white">
+    <div className="navbar z-50 fixed bg-gradient-to-b from-gray-950 via-gray-950 to-black text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-gray-900 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
               <Link href="/about">About Us</Link>
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
 
       <div className="navbar-end">
         <a
-          href="https://drive.google.com/file/d/1aRrbl5j7DXkQM31gCqQS6ZwOn0ysYYua/view?usp=sharing"
+          href="https://drive.google.com/file/d/1etGZAfNZxjM9dKp7KLrt5rvOI21px1ni/view?usp=sharing"
           className=""
         >
           <MagicButton />

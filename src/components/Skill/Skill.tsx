@@ -47,7 +47,7 @@ const Skill: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white mx-auto">
+    <section className="bg-gray-800 text-white mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold text-yellow-400">MY SKILLS</h2>
         <p className="text-lg mt-2 text-white">
@@ -59,7 +59,7 @@ const Skill: React.FC = () => {
         {skills.map((skill, index) => (
           <div
             key={skill.name}
-            className="card bg-red-900 shadow-xl text-center p-4 justify-center items-center"
+            className="card bg-gray-900 shadow-xl text-center p-4 justify-center items-center"
           >
             <div
               className="radial-progress text-yellow-500 text-xl font-bold"
