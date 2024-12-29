@@ -3,7 +3,7 @@ import Link from "next/link";
 const AdminDashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-indigo-600 text-white py-6">
+      <header className="bg-gray-800 text-white py-6">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold">
             Welcome to Your Admin Dashboard
@@ -26,7 +26,7 @@ const AdminDashboard = () => {
               skills.
             </p>
             <Link href="/admin/projects">
-              <p className="block text-center bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors">
+              <p className="block text-center bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors">
                 View Projects
               </p>
             </Link>
@@ -35,14 +35,14 @@ const AdminDashboard = () => {
           <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-semibold">View Messages</h3>
-              <span className="text-indigo-600 text-lg">View</span>
+              <span className="bg-indigo-800 text-lg">View</span>
             </div>
             <p className="text-gray-600 mb-4">
               Read the latest messages from visitors or clients to stay
               connected.
             </p>
             <Link href="/admin/messages">
-              <p className="block text-center bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors">
+              <p className="block text-center bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors">
                 View Messages
               </p>
             </Link>

@@ -19,7 +19,7 @@ interface BlogPost {
   excerpt: string;
   date: string;
   slug: string;
-  image: StaticImageData; // Changed type from string to StaticImageData
+  image: StaticImageData;
 }
 
 const samplePosts: BlogPost[] = [

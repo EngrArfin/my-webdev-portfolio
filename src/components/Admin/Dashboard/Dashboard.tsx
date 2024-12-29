@@ -15,7 +15,6 @@ const Dashboard = () => {
   const { data: session } = useSession();
   const router = useRouter();
 
-  // Handle logout functionality
   const handleLogout = async () => {
     await signOut({ redirect: false });
     router.push("/");
@@ -24,7 +23,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen flex">
       {/* Sidebar */}
-      <div className="w-64 bg-gradient-to-b from-gray-950 via-sky-900 to-black text-white shadow-lg">
+      <div className="w-64 bg-gray-800   text-white shadow-lg">
         <div className="flex flex-col items-center py-6">
           {session && (
             <>
@@ -65,7 +64,7 @@ const Dashboard = () => {
           <li>
             <Link
               href="/admin"
-              className="flex items-center p-4 hover:bg-sky-800 rounded-lg transition duration-200 ease-in-out"
+              className="flex items-center p-4 hover:bg-gray-800 rounded-lg transition duration-200 ease-in-out"
             >
               <FaTachometerAlt className="mr-3 text-xl" /> Dashboard
             </Link>

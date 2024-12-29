@@ -6,7 +6,6 @@ import Header from "@/components/Header/Header";
 import PortfolioData from "@/components/Portfolio/PortfolioData";
 import Skill from "@/components/Skill/Skill";
 import Blogs from "@/components/Blogs/Blogs";
-import ServicesData from "@/components/Blogs/ServicesData";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <PortfolioData />
       <CourseCertificate />
       <ExpEduAchive />
-      <ServicesData />
       <Blogs />
     </div>
   );

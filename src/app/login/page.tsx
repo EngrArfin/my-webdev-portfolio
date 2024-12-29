@@ -50,10 +50,10 @@ const LoginContent = ({ router }: LoginContentProps) => {
   };
 
   return (
-    <div className="max-h-screen flex items-center justify-center bg-gray-100 py-14 px-12 sm:px-8 lg:px-10">
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-900 py-14 px-12 sm:px-8 lg:px-10">
       <div className="w-full max-w-lg bg-white shadow-lg rounded-lg p-8">
         <h2 className="text-center text-3xl font-bold text-gray-800 mb-6">
-          <span className="text-sky-600">Login in Portfolio</span>
+          <span className="text-gray-600">Login in Portfolio</span>
         </h2>
         <div className="flex gap-6">
           <div className="hidden lg:block w-1/2">
@@ -96,7 +96,7 @@ const LoginContent = ({ router }: LoginContentProps) => {
               <div>
                 <Link
                   href="/forget-password"
-                  className="block text-sm font-medium text-sky-500"
+                  className="block text-sm font-medium text-gray-900"
                 >
                   Forget Password
                 </Link>
@@ -105,7 +105,7 @@ const LoginContent = ({ router }: LoginContentProps) => {
               <div>
                 <button
                   type="submit"
-                  className="w-full py-3 px-6 bg-gradient-to-r from-blue-900 to-sky-600 text-white font-semibold rounded-lg shadow-lg hover:from-sky-900 hover:to-sky-900 focus:outline-none focus:ring-4 focus:ring-sky-500 transition duration-200 ease-in-out transform hover:scale-105"
+                  className="w-full py-3 px-6 bg-gray-800 text-white font-semibold rounded-lg shadow-lg  focus:outline-none focus:ring-4 transition duration-200 ease-in-out transform hover:scale-105"
                 >
                   Login
                 </button>
@@ -114,7 +114,7 @@ const LoginContent = ({ router }: LoginContentProps) => {
 
             <p className="text-center mt-4 text-sm text-gray-600">
               Do not have an account?{" "}
-              <Link href="/signup" className="text-sky-600 hover:underline">
+              <Link href="/signup" className="text-gray-800 hover:underline">
                 Sign Up
               </Link>
             </p>

@@ -37,10 +37,10 @@ const SignUp = () => {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div className="max-h-screen flex items-center justify-center bg-gray-100 py-14 px-12 sm:px-8 lg:px-10">
-        <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg p-8">
+      <div className="min-h-screen flex items-center justify-center bg-gray-900 py-14 px-12 sm:px-8 lg:px-10">
+        <div className="w-full max-w-2xl bg-white shadow-xl rounded-lg p-8">
           <h2 className="text-center text-3xl font-bold text-gray-800 mb-6">
-            <span className="text-sky-600">Sign Up Portfolio</span>
+            <span className="text-gray-700">Sign Up</span> to Portfolio
           </h2>
           <div className="flex gap-6">
             <div className="hidden lg:block w-1/2">
@@ -61,8 +61,8 @@ const SignUp = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="User Name"
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Your Name"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
                     required
                   />
                 </div>
@@ -74,7 +74,7 @@ const SignUp = () => {
                     type="email"
                     name="email"
                     placeholder="Email"
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
                     required
                   />
                 </div>
@@ -86,14 +86,14 @@ const SignUp = () => {
                     type="password"
                     name="password"
                     placeholder="Password"
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
                     required
                   />
                 </div>
                 <div>
                   <button
                     type="submit"
-                    className="w-full py-3 px-6 bg-gradient-to-r from-blue-900 to-sky-600 text-white font-semibold rounded-lg shadow-lg hover:from-sky-900 hover:to-sky-900 focus:outline-none focus:ring-4 focus:ring-sky-500 transition duration-200 ease-in-out transform hover:scale-105"
+                    className="w-full py-3 px-6 bg-gray-800 text-white font-semibold rounded-lg shadow-lg hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-500 transition duration-200 ease-in-out transform hover:scale-105"
                   >
                     Sign Up
                   </button>
@@ -101,7 +101,7 @@ const SignUp = () => {
               </form>
               <p className="text-center mt-4 text-sm text-gray-600">
                 Already have an account?{" "}
-                <Link href="/login" className="text-sky-600 hover:underline">
+                <Link href="/login" className="text-gray-900 hover:underline">
                   Login
                 </Link>
               </p>

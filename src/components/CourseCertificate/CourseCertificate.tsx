@@ -12,7 +12,6 @@ import certificate5 from "../../UI/certificate/5datasciencepython.jpg";
 import certificate6 from "../../UI/certificate/6MycrosoftExcell.jpg";
 import certificate7 from "../../UI/certificate/7PowerpointCertificate.jpg";
 import certificate8 from "../../UI/certificate/8Robotics.jpg";
-import certificate9 from "../../UI/certificate/9Nagorik.jpg";
 
 const certificates = [
   {
@@ -70,14 +69,6 @@ const certificates = [
     description:
       "Through this course, I acquired hands-on experience in building and programming robots for automation systems. I learned the fundamentals of robotics, including the use of sensors, actuators, and controllers to build functional robots. I also gained experience in programming robotics systems using popular languages such as Python and C++. The training gave me a strong understanding of how robotics can be applied to industrial automation, manufacturing, and even everyday tasks.",
     image: certificate8,
-  },
-  {
-    id: 9,
-    title:
-      "Community Leadership and Social Responsibility (Nagorik Certificate)",
-    description:
-      "I received the Nagorik Certificate in recognition of my contributions to community service and leadership. This award acknowledges my active participation in various social initiatives and community development projects. I have been involved in organizing events, providing support to underprivileged communities, and promoting awareness about important social issues. This certification represents my commitment to making a positive impact in society through leadership and social responsibility.",
-    image: certificate9,
   },
 ];
 
