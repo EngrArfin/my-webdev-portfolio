@@ -35,20 +35,20 @@ const certificates = [
       "I successfully completed an advanced certification course in Microsoft Word, where I gained deep insights into its powerful features for document creation, editing, and formatting. This training enhanced my skills in working with professional documents, incorporating advanced formatting techniques, creating templates, using styles, and integrating Word with other Microsoft Office tools. This certification showcases my proficiency in using Word for effective document management and professional communication.",
     image: certificate3,
   },
-  {
+  /* {
     id: 4,
     title: "Comprehensive Digital Marketing Strategy & Execution",
     description:
       "This certification program helped me master various aspects of digital marketing, including social media marketing, search engine optimization (SEO), online advertising, and content strategy. I developed a solid understanding of how to create impactful campaigns across different digital platforms, including Google Ads, Facebook, and Instagram. I also learned how to analyze metrics and measure campaign performance to optimize marketing strategies for businesses and brands, thus ensuring the best ROI from digital marketing efforts.",
     image: certificate4,
-  },
-  {
+  }, */
+  /*  {
     id: 5,
     title: "Data Science with Python",
     description:
       "In this course, I delved into the world of data science using Python. I learned how to work with various data analysis and visualization libraries such as Pandas, Matplotlib, and Seaborn to extract valuable insights from data. Additionally, I explored machine learning algorithms, including linear regression, decision trees, and clustering, enabling me to develop predictive models. This certification has equipped me with the skills to analyze large datasets, build machine learning models, and present actionable insights to solve real-world business problems.",
     image: certificate5,
-  },
+  }, */
   {
     id: 6,
     title: "Advanced Microsoft Excel Certification for Data Analysis",
@@ -56,13 +56,14 @@ const certificates = [
       "I completed an advanced training program in Microsoft Excel, focusing on using Excel's powerful data analysis tools. The course covered topics such as pivot tables, advanced formulas, data visualization, and statistical analysis. I gained expertise in automating repetitive tasks with macros and utilizing Excel to generate insightful reports for business decision-making. This certification demonstrates my ability to handle large datasets, perform complex calculations, and present data-driven insights using Excel.",
     image: certificate6,
   },
+  /* 
   {
     id: 7,
     title: "Advanced PowerPoint Presentation Design and Techniques",
     description:
       "This certification program helped me develop advanced skills in creating professional and visually impactful PowerPoint presentations. I learned how to design custom templates, incorporate multimedia, use animation effects, and craft compelling narratives to engage audiences. I also gained expertise in using PowerPoint for corporate presentations, training sessions, and conferences. This certification reflects my ability to deliver high-quality presentations that communicate complex information clearly and effectively.",
     image: certificate7,
-  },
+  }, */
   {
     id: 8,
     title: "Robotics and Automation Systems Development Training",
@@ -92,8 +93,8 @@ const CourseCertificate = () => {
   }, []);
 
   return (
-    <div className="mt-10 m-8 flex flex-col md:flex-row justify-between items-center bg-gray-800 p-6 rounded-lg shadow-md">
-      <div className=" min-h-screen bg-gray-800   text-white flex flex-col justify-center items-center py-16">
+    <div className="mt-10 m-8 flex flex-col md:flex-row justify-between items-center bg-gray-950 p-6 rounded-lg shadow-md">
+      <div className=" min-h-screen bg-gray-950   text-white flex flex-col justify-center items-center py-16">
         <div className="ml-10 container mx-auto px-4 space-y-16">
           <h1 className="text-4xl font-bold text-yellow-400 mb-12 text-center">
             Certificates & Achievements

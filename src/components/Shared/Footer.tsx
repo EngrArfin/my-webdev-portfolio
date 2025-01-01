@@ -6,7 +6,7 @@ import { IoMdLogIn } from "react-icons/io";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white py-16 px-6">
+    <footer className="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white py-16 px-6">
       <div className="max-w-screen-lg mx-auto text-center">
         <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg mx-auto mb-8">
           <Image

@@ -55,7 +55,7 @@ const projects: Project[] = [
     gitClient: "https://github.com/EngrArfin/job-task-shop-client",
     gitServer: "https://github.com/EngrArfin/job-task-shop-server",
   },
-  {
+  /* {
     id: 4,
     title: "SA Food Restaurant",
     image: project4,
@@ -95,7 +95,7 @@ const projects: Project[] = [
     liveLink: "https://aiaffibot.xyz",
     gitClient: "https://github.com/example-client2",
     gitServer: "https://github.com/example-server2",
-  },
+  }, */
 ];
 
 const PortfolioData = () => {
@@ -119,8 +119,8 @@ const PortfolioData = () => {
   };
 
   return (
-    <div className="mt-10 m-8 flex flex-col md:flex-row justify-between items-center bg-gray-800 p-6 rounded-lg shadow-md">
-      <div className="portfolio-container bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white p-6">
+    <div className=" h-screen mt-1 flex flex-col md:flex-row justify-between items-center bg-gray-950 p-6 ">
+      <div className="portfolio-container bg-gradient-to-b from-gray-950 via-gray-950 to-black text-white p-6">
         <h1 className="text-4xl text-yellow-400 font-bold text-center mb-8">
           My Portfolio
         </h1>
@@ -129,7 +129,7 @@ const PortfolioData = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="project-card bg-white shadow-md rounded-md overflow-hidden cursor-pointer hover:border-4 hover:border-yellow-400 hover:scale-105 transform transition duration-300 relative"
+              className="project-card bg-black shadow-md rounded-md overflow-hidden cursor-pointer hover:border-4 hover:border-yellow-400 hover:scale-105 transform transition duration-300 relative"
               onClick={() => openModal(project)}
             >
               <div className="relative group">
@@ -211,8 +211,8 @@ const PortfolioData = () => {
               </a>
             </div>
             <button
+              className="mt-4 px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
               onClick={closeModal}
-              className="mt-6 bg-red-500 text-white px-4 py-2 rounded-md"
             >
               Close
             </button>

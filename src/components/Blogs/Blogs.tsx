@@ -83,7 +83,7 @@ const Blogs: React.FC = () => {
   const [posts] = useState<BlogPost[]>(samplePosts);
 
   return (
-    <div className="min-h-screen bg-gray-800 text-white">
+    <div className="min-h-screen bg-gray-950 text-white">
       <div className="container mx-auto py-16 px-4">
         <h1 className="text-4xl text-yellow-400 font-bold mb-8 text-center">
           My Blog

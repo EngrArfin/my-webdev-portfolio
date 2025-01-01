@@ -9,7 +9,7 @@ import Blogs from "@/components/Blogs/Blogs";
 
 export default function Home() {
   return (
-    <div className=" bg-gray-800">
+    <div className=" bg-gray-950">
       <hr />
       <Header />
       <About />
