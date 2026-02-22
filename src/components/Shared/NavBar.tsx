@@ -108,13 +108,13 @@ const Navbar: React.FC = () => {
       <div className="navbar-end flex items-center space-x-4">
         {/* Show MagicButton on all screens */}
         <a
-          href="https://drive.google.com/file/d/1etGZAfNZxjM9dKp7KLrt5rvOI21px1ni/view?usp=sharing"
+          href="https://drive.google.com/file/d/1HIdAM0WTX-CUhbMoA09M--cVXCtxT01K/view?usp=sharing"
           className="block lg:hidden"
         >
           <MagicButton />
         </a>
         <a
-          href="https://drive.google.com/file/d/1etGZAfNZxjM9dKp7KLrt5rvOI21px1ni/view?usp=sharing"
+          href="https://drive.google.com/file/d/1HIdAM0WTX-CUhbMoA09M--cVXCtxT01K/view?usp=sharing"
           className="hidden lg:block"
         >
           <MagicButton />

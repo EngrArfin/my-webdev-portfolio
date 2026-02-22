@@ -41,7 +41,7 @@ const Header: React.FC = () => {
     }
   }, []);
 
-  const textContent = "MERN Full Stack Developer";
+  const textContent = "MERN Stack Developer (Assist Lead)";
   const headingContent = "Hello, I’m Md Samsel Arfin";
 
   return (

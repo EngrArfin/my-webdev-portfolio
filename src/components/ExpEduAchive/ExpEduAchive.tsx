@@ -102,6 +102,15 @@ const ExpEduAchive: React.FC = () => {
   const experience: ExperienceItem[] = [
     {
       yearRange: "2024 - Present",
+      role: "MERN Stack Developer (Assist Lead)",
+      company: "Softvance Agency",
+      description:
+        "I started my role at Softvance Agency as a MERN Stack Developer (Assist Lead), where I primarily focus on frontend development using React and Next.js. I work on building responsive, scalable, and user-friendly web applications, while also contributing to backend development, API integration, and application architecture.",
+      skill:
+        "React.js, Next.js, JavaScript (ES6+), TypeScript, Tailwind CSS, Redux Toolkit, Node.js, Express.js, MongoDB, Mongoose, GraphQL, PostgreSQL, AWS, REST APIs, Unit Testing",
+    },
+    {
+      yearRange: "2024 - 2025",
       role: "Full Stack Developer (MERN-stack)",
       company: "Programming Hero",
       description:
